@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <script src = "https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src = "https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id = "lab" src="assets/scientific_lab/scene.gltf"></a-asset-item>
+            <a-asset-item id = "bdrone" src="assets/buster_drone/scene.gltf"></a-asset-item>
+        <a-asset-item id = "sdrone" src="assets/scifi_drone_1.1/scene.gltf"></a-asset-item>
+        <a-asset-item id = "s9drone" src="assets/s9_mini_drone/scene.gltf"></a-asset-item>
+
+
+        </a-assets>
+        <a-sky color="#80b3ff"></a-sky>
+        <a-entitity scale="3 3 3" glft-model="#lab" animation-mixer possition="10 3 10"></a-entitity>
+        <a-entitity scale="4 4 4" glft-model="#bdrone" animation-mixer possition="-2 8 20"></a-entitity>
+        <a-entitity scale="1 1 1" glft-model="#sdrone" animation-mixer possition="-20 8 20"></a-entitity>
+        <a-entitity scale="0.03 0.03 0.03" glft-model="#s9drone" animation-mixer possition="-35 10 20"></a-entitity>
+        <a-camera look-controls-enable wasd-controls="fly:true" position="0 5 15"></a-camera>
+    </a-scene>
+</body>
+</html>
